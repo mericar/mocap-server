@@ -1,0 +1,3 @@
+/Users/ralek/ecuad/mocap-server/src/CMakeFiles/rebuild_cache.dir
+/Users/ralek/ecuad/mocap-server/src/CMakeFiles/edit_cache.dir
+/Users/ralek/ecuad/mocap-server/src/CMakeFiles/mocap-test.dir

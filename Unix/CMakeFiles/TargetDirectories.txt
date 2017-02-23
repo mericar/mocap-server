@@ -1,0 +1,12 @@
+/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles/rebuild_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles/edit_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles/mocap-server.dir
+/Users/ralek/ecuad/mocap-server/Unix/easywsclient/CMakeFiles/rebuild_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/easywsclient/CMakeFiles/edit_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/easywsclient/CMakeFiles/easywsclient.dir
+/Users/ralek/ecuad/mocap-server/Unix/protobuf/CMakeFiles/rebuild_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/protobuf/CMakeFiles/edit_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/protobuf/CMakeFiles/VRCom.dir
+/Users/ralek/ecuad/mocap-server/Unix/mocap-test/CMakeFiles/rebuild_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/mocap-test/CMakeFiles/edit_cache.dir
+/Users/ralek/ecuad/mocap-server/Unix/mocap-test/CMakeFiles/mocap-test.dir
