@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ralek/ecuad/mocap-server/src/mocap-test/mocap-test.cpp
+VRCom.pb.h
+/Users/ralek/ecuad/mocap-server/src/mocap-test/VRCom.pb.h
+easywsclient.hpp
+/Users/ralek/ecuad/mocap-server/src/mocap-test/easywsclient.hpp
+math.h
+-
+chrono
+-
+thread
+-
+iostream
+-
+sstream
+-
+cassert
+-
+

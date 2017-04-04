@@ -137,6 +137,19 @@ easywsclient/fast:
 .PHONY : easywsclient/fast
 
 #=============================================================================
+# Target rules for targets named smallUDPClient
+
+# Build rule for target.
+smallUDPClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smallUDPClient
+.PHONY : smallUDPClient
+
+# fast build rule for target.
+smallUDPClient/fast:
+	$(MAKE) -f smallUDPClient/CMakeFiles/smallUDPClient.dir/build.make smallUDPClient/CMakeFiles/smallUDPClient.dir/build
+.PHONY : smallUDPClient/fast
+
+#=============================================================================
 # Target rules for targets named VRCom
 
 # Build rule for target.
@@ -148,6 +161,19 @@ VRCom: cmake_check_build_system
 VRCom/fast:
 	$(MAKE) -f protobuf/CMakeFiles/VRCom.dir/build.make protobuf/CMakeFiles/VRCom.dir/build
 .PHONY : VRCom/fast
+
+#=============================================================================
+# Target rules for targets named flatbuf
+
+# Build rule for target.
+flatbuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flatbuf
+.PHONY : flatbuf
+
+# fast build rule for target.
+flatbuf/fast:
+	$(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/build
+.PHONY : flatbuf/fast
 
 #=============================================================================
 # Target rules for targets named mocap-test
@@ -199,7 +225,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... mocap-server"
 	@echo "... easywsclient"
+	@echo "... smallUDPClient"
 	@echo "... VRCom"
+	@echo "... flatbuf"
 	@echo "... mocap-test"
 	@echo "... mocap-server.o"
 	@echo "... mocap-server.i"

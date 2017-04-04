@@ -64,10 +64,11 @@ CMAKE_BINARY_DIR = /Users/ralek/ecuad/mocap-server/Unix
 
 # All Build rule for target.
 CMakeFiles/mocap-server.dir/all: easywsclient/CMakeFiles/easywsclient.dir/all
+CMakeFiles/mocap-server.dir/all: smallUDPClient/CMakeFiles/smallUDPClient.dir/all
 CMakeFiles/mocap-server.dir/all: protobuf/CMakeFiles/VRCom.dir/all
 	$(MAKE) -f CMakeFiles/mocap-server.dir/build.make CMakeFiles/mocap-server.dir/depend
 	$(MAKE) -f CMakeFiles/mocap-server.dir/build.make CMakeFiles/mocap-server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=5,6 "Built target mocap-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=7,8 "Built target mocap-server"
 .PHONY : CMakeFiles/mocap-server.dir/all
 
 # Include target in all.
@@ -77,7 +78,7 @@ all: CMakeFiles/mocap-server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mocap-server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mocap-server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 0
 .PHONY : CMakeFiles/mocap-server.dir/rule
@@ -153,6 +154,61 @@ clean: easywsclient/CMakeFiles/easywsclient.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory smallUDPClient
+
+# Convenience name for "all" pass in the directory.
+smallUDPClient/all: smallUDPClient/CMakeFiles/smallUDPClient.dir/all
+
+.PHONY : smallUDPClient/all
+
+# Convenience name for "clean" pass in the directory.
+smallUDPClient/clean: smallUDPClient/CMakeFiles/smallUDPClient.dir/clean
+
+.PHONY : smallUDPClient/clean
+
+# Convenience name for "preinstall" pass in the directory.
+smallUDPClient/preinstall:
+
+.PHONY : smallUDPClient/preinstall
+
+#=============================================================================
+# Target rules for target smallUDPClient/CMakeFiles/smallUDPClient.dir
+
+# All Build rule for target.
+smallUDPClient/CMakeFiles/smallUDPClient.dir/all:
+	$(MAKE) -f smallUDPClient/CMakeFiles/smallUDPClient.dir/build.make smallUDPClient/CMakeFiles/smallUDPClient.dir/depend
+	$(MAKE) -f smallUDPClient/CMakeFiles/smallUDPClient.dir/build.make smallUDPClient/CMakeFiles/smallUDPClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=11,12 "Built target smallUDPClient"
+.PHONY : smallUDPClient/CMakeFiles/smallUDPClient.dir/all
+
+# Include target in all.
+all: smallUDPClient/CMakeFiles/smallUDPClient.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+smallUDPClient/CMakeFiles/smallUDPClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 smallUDPClient/CMakeFiles/smallUDPClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 0
+.PHONY : smallUDPClient/CMakeFiles/smallUDPClient.dir/rule
+
+# Convenience name for target.
+smallUDPClient: smallUDPClient/CMakeFiles/smallUDPClient.dir/rule
+
+.PHONY : smallUDPClient
+
+# clean rule for target.
+smallUDPClient/CMakeFiles/smallUDPClient.dir/clean:
+	$(MAKE) -f smallUDPClient/CMakeFiles/smallUDPClient.dir/build.make smallUDPClient/CMakeFiles/smallUDPClient.dir/clean
+.PHONY : smallUDPClient/CMakeFiles/smallUDPClient.dir/clean
+
+# clean rule for target.
+clean: smallUDPClient/CMakeFiles/smallUDPClient.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory protobuf
 
 # Convenience name for "all" pass in the directory.
@@ -208,6 +264,61 @@ clean: protobuf/CMakeFiles/VRCom.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory flatbuf
+
+# Convenience name for "all" pass in the directory.
+flatbuf/all: flatbuf/CMakeFiles/flatbuf.dir/all
+
+.PHONY : flatbuf/all
+
+# Convenience name for "clean" pass in the directory.
+flatbuf/clean: flatbuf/CMakeFiles/flatbuf.dir/clean
+
+.PHONY : flatbuf/clean
+
+# Convenience name for "preinstall" pass in the directory.
+flatbuf/preinstall:
+
+.PHONY : flatbuf/preinstall
+
+#=============================================================================
+# Target rules for target flatbuf/CMakeFiles/flatbuf.dir
+
+# All Build rule for target.
+flatbuf/CMakeFiles/flatbuf.dir/all:
+	$(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/depend
+	$(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=5,6 "Built target flatbuf"
+.PHONY : flatbuf/CMakeFiles/flatbuf.dir/all
+
+# Include target in all.
+all: flatbuf/CMakeFiles/flatbuf.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+flatbuf/CMakeFiles/flatbuf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 flatbuf/CMakeFiles/flatbuf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 0
+.PHONY : flatbuf/CMakeFiles/flatbuf.dir/rule
+
+# Convenience name for target.
+flatbuf: flatbuf/CMakeFiles/flatbuf.dir/rule
+
+.PHONY : flatbuf
+
+# clean rule for target.
+flatbuf/CMakeFiles/flatbuf.dir/clean:
+	$(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/clean
+.PHONY : flatbuf/CMakeFiles/flatbuf.dir/clean
+
+# clean rule for target.
+clean: flatbuf/CMakeFiles/flatbuf.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory mocap-test
 
 # Convenience name for "all" pass in the directory.
@@ -230,10 +341,11 @@ mocap-test/preinstall:
 
 # All Build rule for target.
 mocap-test/CMakeFiles/mocap-test.dir/all: easywsclient/CMakeFiles/easywsclient.dir/all
+mocap-test/CMakeFiles/mocap-test.dir/all: smallUDPClient/CMakeFiles/smallUDPClient.dir/all
 mocap-test/CMakeFiles/mocap-test.dir/all: protobuf/CMakeFiles/VRCom.dir/all
 	$(MAKE) -f mocap-test/CMakeFiles/mocap-test.dir/build.make mocap-test/CMakeFiles/mocap-test.dir/depend
 	$(MAKE) -f mocap-test/CMakeFiles/mocap-test.dir/build.make mocap-test/CMakeFiles/mocap-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=7,8 "Built target mocap-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=9,10 "Built target mocap-test"
 .PHONY : mocap-test/CMakeFiles/mocap-test.dir/all
 
 # Include target in all.
@@ -243,7 +355,7 @@ all: mocap-test/CMakeFiles/mocap-test.dir/all
 
 # Build rule for subdir invocation for target.
 mocap-test/CMakeFiles/mocap-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 mocap-test/CMakeFiles/mocap-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 0
 .PHONY : mocap-test/CMakeFiles/mocap-test.dir/rule

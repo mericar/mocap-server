@@ -91,8 +91,11 @@ mocap__server_EXTERNAL_OBJECTS =
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: CMakeFiles/mocap-server.dir/mocap-server.cpp.o
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: CMakeFiles/mocap-server.dir/build.make
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/src/../lib/Vicon_DataStream_SDK_1.3.0.57137h_MAC/libViconDataStreamSDK_CPP.dylib
+/Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libsmallUDPClient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libeasywsclient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libprotobuf.a
+/Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libflatbuffers.a
+/Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libboost_system-mt.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libVRCom.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: CMakeFiles/mocap-server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/ralek/ecuad/mocap-server/bin/mocap-server"

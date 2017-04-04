@@ -90,8 +90,11 @@ mocap__test_EXTERNAL_OBJECTS =
 
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: mocap-test/CMakeFiles/mocap-test.dir/build.make
+/Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libsmallUDPClient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libeasywsclient.a
+/Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/lib/libflatbuffers.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/lib/libprotobuf.a
+/Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/lib/libboost_system-mt.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libVRCom.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: mocap-test/CMakeFiles/mocap-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/ralek/ecuad/mocap-server/bin/mocap-test"

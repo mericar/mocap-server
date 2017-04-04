@@ -30,7 +30,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/ralek/ecuad/mocap-server/Unix/easywsclient/cmake_install.cmake")
+  include("/Users/ralek/ecuad/mocap-server/Unix/smallUDPClient/cmake_install.cmake")
   include("/Users/ralek/ecuad/mocap-server/Unix/protobuf/cmake_install.cmake")
+  include("/Users/ralek/ecuad/mocap-server/Unix/flatbuf/cmake_install.cmake")
   include("/Users/ralek/ecuad/mocap-server/Unix/mocap-test/cmake_install.cmake")
 
 endif()

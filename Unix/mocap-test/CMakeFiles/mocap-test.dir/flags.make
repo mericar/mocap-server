@@ -6,5 +6,5 @@ CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ralek/ecuad/mocap-server/src -I/Users/ralek/ecuad/mocap-server/src/../lib -I/usr/local/opt/protobuf/include -I/Users/ralek/ecuad/mocap-server/src/easywsclient -I/Users/ralek/ecuad/mocap-server/src/protobuf 
+CXX_INCLUDES = -I/Users/ralek/ecuad/mocap-server/src -I/Users/ralek/ecuad/mocap-server/src/../lib -I/usr/local/opt/protobuf/include -I/usr/local/opt/flatbuffers/include -I/usr/local/opt/boost/include -I/Users/ralek/ecuad/mocap-server/src/smallUDPClient -I/Users/ralek/ecuad/mocap-server/src/easywsclient -I/Users/ralek/ecuad/mocap-server/src/protobuf 
 

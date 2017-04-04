@@ -12,8 +12,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.2/CMakeSystem.cmake"
   "/Users/ralek/ecuad/mocap-server/src/CMakeLists.txt"
   "/Users/ralek/ecuad/mocap-server/src/easywsclient/CMakeLists.txt"
+  "/Users/ralek/ecuad/mocap-server/src/flatbuf/CMakeLists.txt"
   "/Users/ralek/ecuad/mocap-server/src/mocap-test/CMakeLists.txt"
   "/Users/ralek/ecuad/mocap-server/src/protobuf/CMakeLists.txt"
+  "/Users/ralek/ecuad/mocap-server/src/smallUDPClient/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -45,7 +47,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "easywsclient/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "smallUDPClient/CMakeFiles/CMakeDirectoryInformation.cmake"
   "protobuf/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "flatbuf/CMakeFiles/CMakeDirectoryInformation.cmake"
   "mocap-test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -53,6 +57,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mocap-server.dir/DependInfo.cmake"
   "easywsclient/CMakeFiles/easywsclient.dir/DependInfo.cmake"
+  "smallUDPClient/CMakeFiles/smallUDPClient.dir/DependInfo.cmake"
   "protobuf/CMakeFiles/VRCom.dir/DependInfo.cmake"
+  "flatbuf/CMakeFiles/flatbuf.dir/DependInfo.cmake"
   "mocap-test/CMakeFiles/mocap-test.dir/DependInfo.cmake"
   )

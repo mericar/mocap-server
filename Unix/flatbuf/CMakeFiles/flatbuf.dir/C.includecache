@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.c
+flatbuffers/flatbuffers.h
+/Users/ralek/ecuad/mocap-server/src/flatbuf/flatbuffers/flatbuffers.h
+
+/usr/local/opt/flatbuffers/include/flatbuffers/flatbuffers.h
+assert.h
+-
+cstdint
+-
+cstddef
+-
+cstdlib
+-
+cstring
+-
+string
+-
+utility
+-
+type_traits
+-
+vector
+-
+set
+-
+algorithm
+-
+memory
+-
+functional
+-
+
