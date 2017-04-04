@@ -4,9 +4,13 @@
 #include "smallUDPClient.hpp"
 
 int main() {
+
+  boost::asio::io_service io_service;
+  smallUDPClient client(io_service, "localhost", "9000");
+
   for(;;){
-    boost::asio::io_service io_service;
-    smallUDPClient client(io_service, "localhost", "9000");
     client.sendBinary("this is the string");
   }
+
+  return 0;
 }

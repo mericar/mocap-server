@@ -1,6 +1,7 @@
 #include "VRCom.pb.h"
 #include "holojam_generated.h"
 // UDP CLIENT WILL REPLACE "easywsclient.hpp"
+#include "smallUDPClient.hpp"
 #include "easywsclient.hpp"
 #include <math.h>
 #include <chrono>
