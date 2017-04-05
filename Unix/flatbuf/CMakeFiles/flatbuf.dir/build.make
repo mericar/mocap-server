@@ -57,41 +57,41 @@ include flatbuf/CMakeFiles/flatbuf.dir/progress.make
 # Include the compile flags for this target's objects.
 include flatbuf/CMakeFiles/flatbuf.dir/flags.make
 
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o: flatbuf/CMakeFiles/flatbuf.dir/flags.make
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o: /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o"
-	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/flatbuf.dir/holojam_generated.c.o   -c /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.c
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o: flatbuf/CMakeFiles/flatbuf.dir/flags.make
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o: /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o"
+	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/flatbuf.dir/holojam_generated.cc.o -c /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.cc
 
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/flatbuf.dir/holojam_generated.c.i"
-	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.c > CMakeFiles/flatbuf.dir/holojam_generated.c.i
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/flatbuf.dir/holojam_generated.cc.i"
+	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.cc > CMakeFiles/flatbuf.dir/holojam_generated.cc.i
 
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/flatbuf.dir/holojam_generated.c.s"
-	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.c -o CMakeFiles/flatbuf.dir/holojam_generated.c.s
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/flatbuf.dir/holojam_generated.cc.s"
+	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.cc -o CMakeFiles/flatbuf.dir/holojam_generated.cc.s
 
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.requires:
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.requires:
 
-.PHONY : flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.requires
+.PHONY : flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.requires
 
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.provides: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.requires
-	$(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.provides.build
-.PHONY : flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.provides
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.provides: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.requires
+	$(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.provides.build
+.PHONY : flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.provides
 
-flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.provides.build: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o
+flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.provides.build: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o
 
 
 # Object files for target flatbuf
 flatbuf_OBJECTS = \
-"CMakeFiles/flatbuf.dir/holojam_generated.c.o"
+"CMakeFiles/flatbuf.dir/holojam_generated.cc.o"
 
 # External object files for target flatbuf
 flatbuf_EXTERNAL_OBJECTS =
 
-/Users/ralek/ecuad/mocap-server/bin/libflatbuf.a: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o
+/Users/ralek/ecuad/mocap-server/bin/libflatbuf.a: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o
 /Users/ralek/ecuad/mocap-server/bin/libflatbuf.a: flatbuf/CMakeFiles/flatbuf.dir/build.make
 /Users/ralek/ecuad/mocap-server/bin/libflatbuf.a: flatbuf/CMakeFiles/flatbuf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library /Users/ralek/ecuad/mocap-server/bin/libflatbuf.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library /Users/ralek/ecuad/mocap-server/bin/libflatbuf.a"
 	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && $(CMAKE_COMMAND) -P CMakeFiles/flatbuf.dir/cmake_clean_target.cmake
 	cd /Users/ralek/ecuad/mocap-server/Unix/flatbuf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/flatbuf.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,7 +100,7 @@ flatbuf/CMakeFiles/flatbuf.dir/build: /Users/ralek/ecuad/mocap-server/bin/libfla
 
 .PHONY : flatbuf/CMakeFiles/flatbuf.dir/build
 
-flatbuf/CMakeFiles/flatbuf.dir/requires: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o.requires
+flatbuf/CMakeFiles/flatbuf.dir/requires: flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o.requires
 
 .PHONY : flatbuf/CMakeFiles/flatbuf.dir/requires
 

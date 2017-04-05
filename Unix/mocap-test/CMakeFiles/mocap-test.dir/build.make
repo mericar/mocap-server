@@ -90,9 +90,10 @@ mocap__test_EXTERNAL_OBJECTS =
 
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: mocap-test/CMakeFiles/mocap-test.dir/build.make
+/Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libflatbuf.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libsmallUDPClient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libeasywsclient.a
-/Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/lib/libflatbuffers.a
+/Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/cellar/flatbuffers/1.6.0/lib/libflatbuffers.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/lib/libprotobuf.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /usr/local/lib/libboost_system-mt.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-test: /Users/ralek/ecuad/mocap-server/bin/libVRCom.a

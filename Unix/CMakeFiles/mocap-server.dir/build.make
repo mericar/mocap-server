@@ -94,7 +94,7 @@ mocap__server_EXTERNAL_OBJECTS =
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libsmallUDPClient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libeasywsclient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libprotobuf.a
-/Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libflatbuffers.a
+/Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/cellar/flatbuffers/1.6.0/lib/libflatbuffers.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libboost_system-mt.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libVRCom.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: CMakeFiles/mocap-server.dir/link.txt

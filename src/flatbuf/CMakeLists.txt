@@ -1,4 +1,4 @@
-add_library (flatbuf holojam_generated.c)
+add_library (flatbuf holojam_generated.cc)
 
 # Make sure the compiler can find include files for our library
 # when other libraries or executables link to holojam_generated

@@ -125,32 +125,32 @@ flatbuf/fast:
 	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/build
 .PHONY : flatbuf/fast
 
-holojam_generated.o: holojam_generated.c.o
+holojam_generated.o: holojam_generated.cc.o
 
 .PHONY : holojam_generated.o
 
 # target to build an object file
-holojam_generated.c.o:
-	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.o
-.PHONY : holojam_generated.c.o
+holojam_generated.cc.o:
+	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.o
+.PHONY : holojam_generated.cc.o
 
-holojam_generated.i: holojam_generated.c.i
+holojam_generated.i: holojam_generated.cc.i
 
 .PHONY : holojam_generated.i
 
 # target to preprocess a source file
-holojam_generated.c.i:
-	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.i
-.PHONY : holojam_generated.c.i
+holojam_generated.cc.i:
+	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.i
+.PHONY : holojam_generated.cc.i
 
-holojam_generated.s: holojam_generated.c.s
+holojam_generated.s: holojam_generated.cc.s
 
 .PHONY : holojam_generated.s
 
 # target to generate assembly for a file
-holojam_generated.c.s:
-	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.c.s
-.PHONY : holojam_generated.c.s
+holojam_generated.cc.s:
+	cd /Users/ralek/ecuad/mocap-server/Unix && $(MAKE) -f flatbuf/CMakeFiles/flatbuf.dir/build.make flatbuf/CMakeFiles/flatbuf.dir/holojam_generated.cc.s
+.PHONY : holojam_generated.cc.s
 
 # Help Target
 help:
