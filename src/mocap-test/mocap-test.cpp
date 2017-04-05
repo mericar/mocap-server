@@ -8,6 +8,7 @@
 #include <math.h>
 #include <chrono>
 #include <thread>
+#include <string>
 #include <iostream>
 #include <sstream>
 #include <cassert>
@@ -24,7 +25,6 @@ int main(int argc, char* argv[]) {
   boost::asio::io_service clientIoService;
   // Create UDP client
   smallUDPClient client(clientIoService, host, port);
-  assert(&client);
 
   // This while loop prepares the test data and then sends it over the relay.
   const double PI = 2*acos(0.0);
@@ -47,25 +47,35 @@ int main(int argc, char* argv[]) {
       auto v3 = Vector3(sin(angle)*3000, cos(angle)*3000, 0);
       auto v4 = Vector4(0.9961946980917455, 0.08715574274765817, 0, 0);
 
-      /*
-      std::vector<flatbuffers::Offset<Vector3>> vec3s_vector;
-      vec3s_vector.push_back(v3);
-      auto vec3s = builder.CreateVector(vec3s_vector);
+      flatbuffers::Offset<flatbuffers::Vector<const Vector3 *>> vec3s_vector;
+      std::vector<Vector3> array3;
+      array3.reserve(1);
+      array3.push_back(v3);
+      auto vec3s = builder.CreateVectorOfStructs(array3);
 
-      std::vector<flatbuffers::Offset<Vector4>> vec4s_vector;
-      vec4s_vector.push_back(v4);
-      auto vec4s = builder.CreateVector(vec4s_vector);
-      */
+      flatbuffers::Offset<flatbuffers::Vector<const Vector4 *>> vec4s_vector;
+      std::vector<Vector4> array4;
+      array4.reserve(1);
+      array4.push_back(v4);
+      auto vec4s = builder.CreateVectorOfStructs(array4);
 
       // create a flake:
       FlakeBuilder flake_builder(builder);
       flake_builder.add_label(flakeLabel);
-      flake_builder.add_vector3s(v3);
-      flake_builder.add_vector4s(v4);
-      auto flaks = flake_builder.Finish();
+      flake_builder.add_vector3s(vec3s_vector);
+      flake_builder.add_vector4s(vec4s_vector);
+      auto flak = flake_builder.Finish();
+
+      std::vector<flatbuffers::Offset<Flake>> flake_vector;
+      flake_vector.push_back(flak);
+      auto flaks = builder.CreateVector(flake_vector);
 
       // create the nugget and finish the serialization:
-      auto nug = CreateNugget(builder, scop, orig, NuggetType_UPDATE, flaks);
+      NuggetBuilder nugget_builder(builder);
+      nugget_builder.add_scope(scop);
+      nugget_builder.add_origin(orig);
+      nugget_builder.add_flakes(flaks);
+      auto nug = nugget_builder.Finish();
       builder.Finish(nug);
 
       //Buffer and it's size:
@@ -74,11 +84,10 @@ int main(int argc, char* argv[]) {
 
       // Get nugget data tht was made above:
       auto ngt = GetNugget(buf);
-      auto fs = ngt->flakes();
-      auto lbl = fs->Get(1)->label()->str();
+      auto le = ngt->flakes()->Length();
 
       // UDP Client
-      client.sendBinary(lbl);
+      client.sendBinary(to_string(le));
 
        // MIRKO IS UNCERTAIN OF THE UTILITY OF THIS DELAY MECHANISM:
        std::this_thread::sleep_for(std::chrono::milliseconds(20));

@@ -8,7 +8,7 @@ CMakeFiles/mocap-server.dir/mocap-server.cpp.o
  /Users/ralek/ecuad/mocap-server/src/mocap-server.cpp
  /Users/ralek/ecuad/mocap-server/src/protobuf/VRCom.pb.h
  /Users/ralek/ecuad/mocap-server/src/smallUDPClient/smallUDPClient.hpp
- /usr/local/cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
+ /usr/local/Cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
  /usr/local/opt/boost/include/boost/array.hpp
  /usr/local/opt/boost/include/boost/asio.hpp
  /usr/local/opt/boost/include/boost/asio/async_result.hpp

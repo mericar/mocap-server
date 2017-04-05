@@ -6,7 +6,7 @@ mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /Users/ralek/ecuad/mocap-
 mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /Users/ralek/ecuad/mocap-server/src/mocap-test/mocap-test.cpp
 mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /Users/ralek/ecuad/mocap-server/src/protobuf/VRCom.pb.h
 mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /Users/ralek/ecuad/mocap-server/src/smallUDPClient/smallUDPClient.hpp
-mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /usr/local/cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
+mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /usr/local/Cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
 mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /usr/local/opt/boost/include/boost/array.hpp
 mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /usr/local/opt/boost/include/boost/asio.hpp
 mocap-test/CMakeFiles/mocap-test.dir/mocap-test.cpp.o: /usr/local/opt/boost/include/boost/asio/async_result.hpp

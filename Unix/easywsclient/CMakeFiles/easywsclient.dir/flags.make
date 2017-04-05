@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -stdlib=libc++ -isysroot /Applications/Xcode.app/Content
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ralek/ecuad/mocap-server/src -I/Users/ralek/ecuad/mocap-server/src/../lib -I/usr/local/opt/protobuf/include -I/usr/local/cellar/flatbuffers/1.6.0/include -I/usr/local/opt/boost/include -I/Users/ralek/ecuad/mocap-server/src/easywsclient 
+CXX_INCLUDES = -I/Users/ralek/ecuad/mocap-server/src -I/Users/ralek/ecuad/mocap-server/src/../lib -I/usr/local/opt/protobuf/include -I/usr/local/Cellar/flatbuffers/1.6.0/include -I/usr/local/opt/boost/include -I/Users/ralek/ecuad/mocap-server/src/easywsclient 
 

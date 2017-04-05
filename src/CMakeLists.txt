@@ -8,7 +8,7 @@ set (EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set (LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set (EXT_LIB "${PROJECT_SOURCE_DIR}/../lib")
 set (GOOGLE_PROTOBUF_LIB /usr/local/opt/protobuf/include)
-set (GOOGLE_FLATBUF_LIB /usr/local/cellar/flatbuffers/1.6.0/include)
+set (GOOGLE_FLATBUF_LIB /usr/local/Cellar/flatbuffers/1.6.0/include)
 set (BOOST_LIB /usr/local/opt/boost/include)
 
 include_directories(${PROJECT_SOURCE_DIR} ${EXT_LIB} ${GOOGLE_PROTOBUF_LIB})

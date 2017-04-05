@@ -35,6 +35,8 @@ chrono
 -
 thread
 -
+string
+-
 iostream
 -
 sstream
@@ -76,7 +78,7 @@ boost/array.hpp
 boost/asio.hpp
 -
 
-/usr/local/cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
+/usr/local/Cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
 assert.h
 -
 cstdint

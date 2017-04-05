@@ -13,7 +13,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Users/ralek/ecuad/mocap-server/src"
   "/Users/ralek/ecuad/mocap-server/src/../lib"
   "/usr/local/opt/protobuf/include"
-  "/usr/local/cellar/flatbuffers/1.6.0/include"
+  "/usr/local/Cellar/flatbuffers/1.6.0/include"
   "/usr/local/opt/boost/include"
   "/Users/ralek/ecuad/mocap-server/src/protobuf"
   )
