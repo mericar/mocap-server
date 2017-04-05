@@ -3,9 +3,11 @@
 
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /Users/ralek/ecuad/mocap-server/src/../lib/Vicon/Client.h
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /Users/ralek/ecuad/mocap-server/src/easywsclient/easywsclient.hpp
+CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /Users/ralek/ecuad/mocap-server/src/flatbuf/holojam_generated.h
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /Users/ralek/ecuad/mocap-server/src/mocap-server.cpp
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /Users/ralek/ecuad/mocap-server/src/protobuf/VRCom.pb.h
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /Users/ralek/ecuad/mocap-server/src/smallUDPClient/smallUDPClient.hpp
+CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /usr/local/cellar/flatbuffers/1.6.0/include/flatbuffers/flatbuffers.h
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /usr/local/opt/boost/include/boost/array.hpp
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /usr/local/opt/boost/include/boost/asio.hpp
 CMakeFiles/mocap-server.dir/mocap-server.cpp.o: /usr/local/opt/boost/include/boost/asio/async_result.hpp

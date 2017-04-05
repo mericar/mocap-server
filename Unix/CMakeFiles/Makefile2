@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /Users/ralek/ecuad/mocap-server/Unix
 CMakeFiles/mocap-server.dir/all: easywsclient/CMakeFiles/easywsclient.dir/all
 CMakeFiles/mocap-server.dir/all: smallUDPClient/CMakeFiles/smallUDPClient.dir/all
 CMakeFiles/mocap-server.dir/all: protobuf/CMakeFiles/VRCom.dir/all
+CMakeFiles/mocap-server.dir/all: flatbuf/CMakeFiles/flatbuf.dir/all
 	$(MAKE) -f CMakeFiles/mocap-server.dir/build.make CMakeFiles/mocap-server.dir/depend
 	$(MAKE) -f CMakeFiles/mocap-server.dir/build.make CMakeFiles/mocap-server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ralek/ecuad/mocap-server/Unix/CMakeFiles --progress-num=7,8 "Built target mocap-server"
@@ -78,7 +79,7 @@ all: CMakeFiles/mocap-server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mocap-server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mocap-server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ralek/ecuad/mocap-server/Unix/CMakeFiles 0
 .PHONY : CMakeFiles/mocap-server.dir/rule

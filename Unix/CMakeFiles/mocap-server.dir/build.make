@@ -91,6 +91,7 @@ mocap__server_EXTERNAL_OBJECTS =
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: CMakeFiles/mocap-server.dir/mocap-server.cpp.o
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: CMakeFiles/mocap-server.dir/build.make
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/src/../lib/Vicon_DataStream_SDK_1.3.0.57137h_MAC/libViconDataStreamSDK_CPP.dylib
+/Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libflatbuf.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libsmallUDPClient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /Users/ralek/ecuad/mocap-server/bin/libeasywsclient.a
 /Users/ralek/ecuad/mocap-server/bin/mocap-server: /usr/local/lib/libprotobuf.a

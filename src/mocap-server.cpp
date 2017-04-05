@@ -1,7 +1,7 @@
 #include "Vicon/Client.h"
 #include "easywsclient.hpp"
 #include "smallUDPClient.hpp"
-//#include ""
+#include "holojam_generated.h"
 #include "VRCom.pb.h"
 #include <iostream>
 #include <fstream>

@@ -15,6 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/opt/protobuf/include"
   "/usr/local/cellar/flatbuffers/1.6.0/include"
   "/usr/local/opt/boost/include"
+  "/Users/ralek/ecuad/mocap-server/src/flatbuf"
   "/Users/ralek/ecuad/mocap-server/src/smallUDPClient"
   "/Users/ralek/ecuad/mocap-server/src/easywsclient"
   "/Users/ralek/ecuad/mocap-server/src/protobuf"
@@ -22,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/ralek/ecuad/mocap-server/Unix/flatbuf/CMakeFiles/flatbuf.dir/DependInfo.cmake"
   "/Users/ralek/ecuad/mocap-server/Unix/smallUDPClient/CMakeFiles/smallUDPClient.dir/DependInfo.cmake"
   "/Users/ralek/ecuad/mocap-server/Unix/easywsclient/CMakeFiles/easywsclient.dir/DependInfo.cmake"
   "/Users/ralek/ecuad/mocap-server/Unix/protobuf/CMakeFiles/VRCom.dir/DependInfo.cmake"
