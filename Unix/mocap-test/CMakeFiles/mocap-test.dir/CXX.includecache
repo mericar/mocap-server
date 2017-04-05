@@ -25,6 +25,10 @@ easywsclient.hpp
 /Users/ralek/ecuad/mocap-server/src/mocap-test/easywsclient.hpp
 smallUDPClient.hpp
 /Users/ralek/ecuad/mocap-server/src/mocap-test/smallUDPClient.hpp
+boost/array.hpp
+-
+boost/asio.hpp
+-
 math.h
 -
 chrono

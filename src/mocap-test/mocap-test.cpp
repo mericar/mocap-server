@@ -3,6 +3,8 @@
 #include "holojam_generated.h"
 #include "easywsclient.hpp"
 #include "smallUDPClient.hpp"
+#include <boost/array.hpp>
+#include <boost/asio.hpp>
 #include <math.h>
 #include <chrono>
 #include <thread>
@@ -10,51 +12,73 @@
 #include <sstream>
 #include <cassert>
 
+using namespace Holojam::Protocol;
+
 int main(int argc, char* argv[]) {
 
 	// UDP CLIENT REPLACES WebSocket easywsclient SETUP
-  std::string WebsocketAddr = "ws://127.0.0.1:4567";
+  std::string host = "localhost";
+  std::string port = "4567";
 
-  if (argc > 1)
-    WebsocketAddr = argv[1];
-
-  using easywsclient::WebSocket;
-  WebSocket::pointer ws = WebSocket::from_url(WebsocketAddr);
-  assert(ws);
-
-  // replace with holojam_generated.h procedures:
-	std::ostringstream bufstr;
-  VRCom::Update* msg = new VRCom::Update();
-	VRCom::Mocap* mocap = new VRCom::Mocap();
-  msg->set_allocated_mocap(mocap);
-  auto& subjects = *mocap->mutable_subjects();
-
-  auto& currentSubj = subjects["test"];
+  // Create IO service
+  boost::asio::io_service clientIoService;
+  // Create UDP client
+  smallUDPClient client(clientIoService, host, port);
+  assert(&client);
 
   // This while loop prepares the test data and then sends it over the relay.
   const double PI = 2*acos(0.0);
   float angle;
+
   while(true) {
+
     for (int i = 0; i < 100; i++) {
-    	 angle = 2*PI/100*i;
-    	 currentSubj.mutable_pos()->set_x(sin(angle)*3000);
-       currentSubj.mutable_pos()->set_y(cos(angle)*3000);
-       currentSubj.mutable_pos()->set_z(0);
 
-       //rotation of 10 degrees in Z.
-       currentSubj.mutable_rot()->set_x(0.9961946980917455);
-       currentSubj.mutable_rot()->set_y(0.08715574274765817);
-       currentSubj.mutable_rot()->set_z(0);
-       currentSubj.mutable_rot()->set_w(0);
+      angle = 2*PI/100*i;
 
-       msg->SerializeToOstream(&bufstr);
+      // Create and init a FlatBufferBuilder
+      flatbuffers::FlatBufferBuilder builder(1024);
 
-       // UDP COMMUNICATOPN WILL REPLACE WebSocket SERVER
-       ws->sendBinary(bufstr.str());
-       ws->poll();
+      // Nugget Label
+      auto flakeLabel = builder.CreateString("vec3");
+      auto scop = builder.CreateString("IAA");
+      auto orig = builder.CreateString("mocap-test");
 
-       std::ostringstream().swap(bufstr);
-       bufstr.clear();
+      auto v3 = Vector3(sin(angle)*3000, cos(angle)*3000, 0);
+      auto v4 = Vector4(0.9961946980917455, 0.08715574274765817, 0, 0);
+
+      /*
+      std::vector<flatbuffers::Offset<Vector3>> vec3s_vector;
+      vec3s_vector.push_back(v3);
+      auto vec3s = builder.CreateVector(vec3s_vector);
+
+      std::vector<flatbuffers::Offset<Vector4>> vec4s_vector;
+      vec4s_vector.push_back(v4);
+      auto vec4s = builder.CreateVector(vec4s_vector);
+      */
+
+      // create a flake:
+      FlakeBuilder flake_builder(builder);
+      flake_builder.add_label(flakeLabel);
+      flake_builder.add_vector3s(v3);
+      flake_builder.add_vector4s(v4);
+      auto flaks = flake_builder.Finish();
+
+      // create the nugget and finish the serialization:
+      auto nug = CreateNugget(builder, scop, orig, NuggetType_UPDATE, flaks);
+      builder.Finish(nug);
+
+      //Buffer and it's size:
+      uint8_t *buf = builder.GetBufferPointer();
+      int bufsz = builder.GetSize();
+
+      // Get nugget data tht was made above:
+      auto ngt = GetNugget(buf);
+      auto fs = ngt->flakes();
+      auto lbl = fs->Get(1)->label()->str();
+
+      // UDP Client
+      client.sendBinary(lbl);
 
        // MIRKO IS UNCERTAIN OF THE UTILITY OF THIS DELAY MECHANISM:
        std::this_thread::sleep_for(std::chrono::milliseconds(20));
