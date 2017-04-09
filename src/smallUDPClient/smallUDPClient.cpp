@@ -26,6 +26,10 @@ public:
     udp_socket_.close();
   }
 
+  void sendBinaryBuffer(uint8_t* buf, int size) {
+    udp_socket_.send_to(boost::asio::buffer(buf, size), client_endpoint_);
+  }
+
   //takes a string pointer and sends a binary format of it over the wire
   void sendBinary(const string& s) {
     udp_socket_.send_to(boost::asio::buffer(s, s.size()), client_endpoint_);
