@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 
 	// UDP CLIENT REPLACES WebSocket easywsclient SETUP
   std::string host = "127.0.0.1";
-  std::string port = "9591";
+  std::string port = "9592";
 
   // Create IO service
   boost::asio::io_service clientIoService;

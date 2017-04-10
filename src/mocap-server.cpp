@@ -1,8 +1,8 @@
 #include "Vicon/Client.h"
-#include "easywsclient.hpp"
 #include "smallUDPClient.hpp"
 #include "holojam_generated.h"
-#include "VRCom.pb.h"
+#include <boost/array.hpp>
+#include <boost/asio.hpp>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -149,6 +149,8 @@ enum AxisOrientation {
 
 int main( int argc, char* argv[] )
 {
+  /*
+
   // Program options
 
   //Vicon is a right-handed coordinate system with ZUP by default.
@@ -156,7 +158,7 @@ int main( int argc, char* argv[] )
   AxisOrientation axes = ZUP;
 
   std::string HostName = "localhost:801";
-  std::string WebsocketAddr = "ws://localhost:4567";
+  std::string destinationAddr = "ws://localhost:4567";
   int a = 1;
   if( argc > 1 )
   {
@@ -164,7 +166,7 @@ int main( int argc, char* argv[] )
     a = 2;
   }
   if (argc > 2) {
-    WebsocketAddr = argv[2];
+    destinationAddr = argv[2];
     a = 3;
   }
 
@@ -239,12 +241,12 @@ int main( int argc, char* argv[] )
   #endif
     }
 
-    // Connect to vr websocket server
-    // MIRKOS's TODO: TO BE REPLACED WITH UDP CLIENT CONNECTING TO HOLOJAM-NODE
+    // Create smallUDPClient:
+    // Create IO service
+    boost::asio::io_service clientIoService;
+    // Create UDP client
+    smallUDPClient client(clientIoService, host, port);
 
-    using easywsclient::WebSocket;
-    WebSocket::pointer ws = WebSocket::from_url(WebsocketAddr);
-    assert(ws);
 
     VRCom::Update* msg = new VRCom::Update();
     VRCom::Mocap* mocap = new VRCom::Mocap();
@@ -484,4 +486,5 @@ int main( int argc, char* argv[] )
 
     ws->close();
   }
+*/
 }
